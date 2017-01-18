@@ -1,0 +1,590 @@
+<!--$sitebuilder version="2.3.1" extra="Java(1.5.0_09)" md5="3f50e3634e0c0e17fa0c26a696cdc170"$-->
+<!--$templateKey Computers, Software, Internet|Computer Blues - Blue|2.0$-->
+<html>
+  
+<!-- Mirrored from twieth.com/compsci/webfinal/chapter18.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Jan 2017 08:01:55 GMT -->
+<head>
+    <title>Chapter 18</title>
+    <meta name="generator" content="Yahoo! SiteBuilder/2.3.1/1.5.0_09">
+    <!--$page size 762, 3000$-->
+    <!--$centered$-->
+    <!--$fontFamily Arial$-->
+    <!--$fontSize 10$-->
+    <style type="text/css"><!--
+      BODY {font-family:"Arial"; font-size:10;text-align:center;min-width:762px;}
+      P {font-family:"Arial"; font-size:10;}
+      FORM {margin:0;padding:0;}
+      #centerwrapper {text-align:left;width:762px;margin-left:auto;margin-right:auto;}
+    --></style>
+    <script>// workaround for IE table layout bugs
+      function tableWorkaround(cols) { if (document.all) { document.write('<tr>'); for (var i = 0; i < cols; i++) { document.write('<td></td>'); } document.write('</tr>') }; }
+      function tableWorkaround2_colheader() { if (document.all) { document.write('<col width="0">') }; }
+      function tableWorkaround2(rowHeight) { if (document.all) { document.write('<td height="' + rowHeight + '">'); document.write('</td>') }; }
+    </script>
+
+<style>
+		body
+		{
+			font-family:arial;
+			background:#FFFFFF;
+		}
+		table
+		{
+			font-size:80%;background:#FFFFFF
+		}
+		a
+		{
+			color:black;
+			text-decoration:none;
+			font:bold
+		}
+		a:hover
+		{
+			color:#606060
+		}
+		tr
+		{
+			background:#000000;
+		}
+		tr.menu
+		{
+			background:#002060;
+		}
+		table.menu
+		{
+			font-size:100%;
+			position:absolute;
+			visibility:hidden;
+		}
+	</style>
+	<script type="text/javascript">
+function showmenu(elmnt)
+{
+document.getElementById(elmnt).style.visibility="visible"
+}
+function hidemenu(elmnt)
+{
+document.getElementById(elmnt).style.visibility="hidden"
+}
+	</script>	
+  </head>
+  <body bgcolor="#FFFFFF" background="clipart/backgrounds/tile/grayStripes_background.html" text="#000000" link="#0000FF" vlink="#800080" marginheight="0" marginwidth="1" topmargin="0" leftmargin="1" hspace="1" vspace="0">
+
+    <div id="centerwrapper">
+      <div id="root" style="position:absolute;width:762px;height:582px;">
+        <div id="e0" style="position:absolute;left:1;top:0;width:760;height:130;"><!--$img %RemappedImageAsset:/sitebuilder/clipart/bars/regular/horizontal/blue_header.jpg$--><img src="sitebuilder/images/blue_header-760x130.jpg" width="760" height="130" alt=""></div>
+        <div id="e1" style="position:absolute;left:153;top:132;width:406;height:450;">
+          <table border="0" cellspacing="0" cellpadding="0" width="406">
+            <tr>
+              <td nowrap height="450" valign="top" bgcolor="#FFFFFF"><table  width="406">
+            <tr class="menu">
+              <td width="398"><div align="center"><a target="_blank" href="examples/ch18/fig18_01_02/SiteSelector.java"><font color="#FFFFFF" size="2">SiteSelector</font></a></div></td>
+            </tr>
+            <tr class="menu">
+              <td><div align="center"><a target="_blank" href="examples/ch18/fig18_03/ReadServerFile.java"><font color="#FFFFFF" size="2">ReadServerFile</font></a></div></td>
+            </tr>
+            <tr class="menu">
+              <td><div align="center"><a target="_blank" href="examples/ch18/fig18_04_05/Client.java"><font color="#FFFFFF" size="2">Client</font></a></div></td>
+            </tr>
+            <tr class="menu">
+              <td><div align="center"><a target="_blank" href="examples/ch18/fig18_04_05/Server.java"><font color="#FFFFFF" size="2">Server</font></a></div></td>
+            </tr>
+            <tr class="menu">
+              <td><div align="center"><a target="_blank" href="examples/ch18/fig18_06_07/Client.java"><font color="#FFFFFF" size="2">Client</font></a></div></td>
+            </tr>
+            <tr class="menu">
+              <td><div align="center"><a target="_blank" href="examples/ch18/fig18_06_07/Server.java"><font color="#FFFFFF" size="2">Server</font></a></div></td>
+            </tr>
+            <tr class="menu">
+              <td><div align="center"><a target="_blank" href="examples/ch18/fig18_08_09/TicTacToeClient.java"><font color="#FFFFFF" size="2">TicTacToeClient</font></a></div></td>
+            </tr>
+            <tr class="menu">
+              <td><div align="center"><a target="_blank" href="examples/ch18/fig18_08_09/TicTacToeServer.java"><font color="#FFFFFF" size="2">TicTacToeServer</font></a></div></td>
+            </tr>
+          </table></td>
+            </tr>
+          </table>
+        </div>
+        <div id="e2" style="position:absolute;left:1;top:130;width:150;height:452;"><!--$img %RemappedImageAsset:/sitebuilder/clipart/bars/regular/vertical/blueComputerNavigationBox.jpg$--><img src="sitebuilder/preview/sitebuilder/clipart/bars/regular/vertical/blueComputerNavigationBox.jpg" width="150" height="630"></div>
+        <div id="e3" style="position:absolute;left:557;top:130;width:204;height:452;"><!--$img %RemappedImageAsset:/sitebuilder/clipart/bars/regular/vertical/grayKeyboardTop.gif$--><img src="sitebuilder/preview/sitebuilder/clipart/bars/regular/vertical/grayKeyboardTop.gif" width="204" height="452"></div>
+        <div id="e4" style="position:absolute;left:13;top:8;width:120;height:29;"><span class="text"><b><font color="#4A9CE4" size="5"><span style="font-size:24px;line-height:29px;">Chapter 18<br soft></span></font></b></span></div>
+        <div id="e5" style="position:absolute;left:1;top:131;width:150;height:312;"><!--$navbar 
+name=navbar.nav
+assetID=%NavbarAsset:/navigation_bars/navbar.nav
+$--><!--$begin exclude$--><table border="0" cellspacing="0" cellpadding="0">
+<!--tr><td-->
+<tr class="menu">
+<td onmouseover="showmenu('home')" onmouseout="hidemenu('home')" bgcolor="#002060">
+<a href="index-2.html" onMouseOver="document.images ['i10'].src='sitebuilder/images/navbar-0-mouseOver-92406.png'" onMouseOut="document.images['i10'].src='sitebuilder/images/navbar-0-active-91968.png'"><img name="i10" src="sitebuilder/images/navbar-0-active-91968.png" width="150" height="24" border="0" alt=""/></a>
+<table class="menu" id="home" width="130">
+<tr class="menu"><td><a href="chapter2.html"><font color="#FFFFFF" size="2">Chapter 2</font></a></td></tr>
+<tr class="menu"><td><a href="chapter3.html"><font color="#FFFFFF" size="2">Chapter 3</font></a></td></tr>
+<tr class="menu"><td><a href="chapter4.html"><font color="#FFFFFF" size="2">Chapter 4</font></a></td></tr>
+<tr class="menu"><td><a href="chapter5.html"><font color="#FFFFFF" size="2">Chapter 5</font></a></td></tr>
+<tr class="menu"><td><a href="chapter6.html"><font color="#FFFFFF" size="2">Chapter 6</font></a></td></tr>
+<tr class="menu"><td><a href="chapter7.html"><font color="#FFFFFF" size="2">Chapter 7</font></a></td></tr>
+<tr class="menu"><td><a href="chapter8.html"><font color="#FFFFFF" size="2">Chapter 8</font></a></td></tr>
+<tr class="menu"><td><a href="chapter9.html"><font color="#FFFFFF" size="2">Chapter 9</font></a></td></tr>
+<tr class="menu"><td><a href="chapter10.html"><font color="#FFFFFF" size="2">Chapter 10</font></a></td></tr>
+<tr class="menu"><td><a href="chapter11.html"><font color="#FFFFFF" size="2">Chapter 11</font></a></td></tr>
+<tr class="menu"><td><a href="chapter12.html"><font color="#FFFFFF" size="2">Chapter 12</font></a></td></tr>
+<tr class="menu"><td><a href="chapter13.html"><font color="#FFFFFF" size="2">Chapter 13</font></a></td></tr>
+<tr class="menu"><td><a href="chapter14.html"><font color="#FFFFFF" size="2">Chapter 14</font></a></td></tr>
+<tr class="menu"><td><a href="chapter15.html"><font color="#FFFFFF" size="2">Chapter 15</font></a></td></tr>
+<tr class="menu"><td><a href="chapter16.html"><font color="#FFFFFF" size="2">Chapter 16</font></a></td></tr>
+<tr class="menu"><td><a href="chapter17.html"><font color="#FFFFFF" size="2">Chapter 17</font></a></td></tr>
+<tr class="menu"><td><a href="chapter18.html"><font color="#FFFFFF" size="2">Chapter 18</font></a></td></tr>
+<tr class="menu"><td><a href="chapter19.html"><font color="#FFFFFF" size="2">Chapter 19</font></a></td></tr>
+<tr class="menu"><td><a href="chapter20.html"><font color="#FFFFFF" size="2">Chapter 20</font></a></td></tr>
+<tr class="menu"><td><a href="chapter21.html"><font color="#FFFFFF" size="2">Chapter 21</font></a></td></tr>
+<tr class="menu"><td><a href="chapter22.html"><font color="#FFFFFF" size="2">Chapter 22</font></a></td></tr>
+<tr class="menu"><td><a href="chapter23.html"><font color="#FFFFFF" size="2">Chapter 23</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter2')" onmouseout="hidemenu('chapter2')" bgcolor="#002060">
+<a href="chapter2.html" onMouseOver="document.images['i11'].src='sitebuilder/images/navbar-1-mouseOver-93718.png'" onMouseOut="document.images['i11'].src='sitebuilder/images/navbar-1-inactive-92843.png'"><img name="i11" src="sitebuilder/images/navbar-1-inactive-92843.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter2" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch02/fig02_01/Welcome1.html"><font color="#FFFFFF" size="2">Welcome 1</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch02/fig02_03/Welcome2.html"><font color="#FFFFFF" size="2">Welcome 2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch02/fig02_04/Welcome3.html"><font color="#FFFFFF" size="2">Welcome 3</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch02/fig02_06/Welcome4.html"><font color="#FFFFFF" size="2">Welcome 4</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch02/fig02_09/Addition.html"><font color="#FFFFFF" size="2">Addition</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch02/fig02_20/Comparison.html"><font color="#FFFFFF" size="2">Comparison</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter3')" onmouseout="hidemenu('chapter3')" bgcolor="#002060">
+<a href="chapter3.html" onMouseOver="document.images['i12'].src='sitebuilder/images/navbar-2-mouseOver-52984.png'" onMouseOut="document.images['i12'].src='sitebuilder/images/navbar-2-inactive-52156.png'"><img name="i12" src="sitebuilder/images/navbar-2-inactive-52156.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter3" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch03/fig03_06/WelcomeApplet.html"><font color="#FFFFFF" size="2">WelcomeApplet</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch03/fig03_09/WelcomeApplet2.html"><font color="#FFFFFF" size="2">WelcomeApplet 2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch03/fig03_11/WelcomeLines.html"><font color="#FFFFFF" size="2">WelcomeLines</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch03/fig03_13/AdditionApplet.html"><font color="#FFFFFF" size="2">AdditionApplet</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter4')" onmouseout="hidemenu('chapter4')" bgcolor="#002060">
+<a href="chapter4.html" onMouseOver="document.images['i13'].src='sitebuilder/images/navbar-3-mouseOver-80062.png'" onMouseOut="document.images['i13'].src='sitebuilder/images/navbar-3-inactive-79234.png'"><img name="i13" src="sitebuilder/images/navbar-3-inactive-79234.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter4" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch04/fig04_07/Average1.html"><font color="#FFFFFF" size="2">Average 1</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch04/fig04_09/Average2.html"><font color="#FFFFFF" size="2">Average 2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch04/fig04_11/Analysis.html"><font color="#FFFFFF" size="2">Analysis</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch04/fig04_14/Increment.html"><font color="#FFFFFF" size="2">Increment</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter5')" onmouseout="hidemenu('chapter5')" bgcolor="#002060">
+<a href="chapter5.html" onMouseOver="document.images['i14'].src='sitebuilder/images/navbar-4-mouseOver-81281.png'" onMouseOut="document.images['i14'].src='sitebuilder/images/navbar-4-inactive-80468.png'"><img name="i14" src="sitebuilder/images/navbar-4-inactive-80468.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter5" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch05/fig05_01/WhileCounter.html"><font color="#FFFFFF" size="2">WhileCounter</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch05/fig05_02/ForCounter.html"><font color="#FFFFFF" size="2">ForCounter</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch05/fig05_05/Sum.html"><font color="#FFFFFF" size="2">Sum</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch05/fig05_06/Interest.html"><font color="#FFFFFF" size="2">Interest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch05/fig05_07/DoWhileTest.html"><font color="#FFFFFF" size="2">DoWhileTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch05/fig05_09/SwitchTest.html"><font color="#FFFFFF" size="2">SwitchTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch05/fig05_11/BreakTest.html"><font color="#FFFFFF" size="2">BreakTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch05/fig05_12/ContinueTest.html"><font color="#FFFFFF" size="2">ContinueTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch05/fig05_13/BreakLabelTest.html"><font color="#FFFFFF" size="2">BreakLabelTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch05/fig05_14/ContinueLabelTest.html"><font color="#FFFFFF" size="2">ContinueLabelTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch05/fig05_19/LogicalOperators.html"><font color="#FFFFFF" size="2">LogicalOperators</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter6')" onmouseout="hidemenu('chapter6')" bgcolor="#002060">
+<a href="chapter6.html" onMouseOver="document.images['i15'].src='sitebuilder/images/navbar-5-mouseOver-82500.png'" onMouseOut="document.images['i15'].src='sitebuilder/images/navbar-5-inactive-81687.png'"><img name="i15" src="sitebuilder/images/navbar-5-inactive-81687.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter6" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch06/fig06_03/SquareIntegers.html"><font color="#FFFFFF" size="2">SquareIntegers</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch06/fig06_04/MaximumTest.html"><font color="#FFFFFF" size="2">MaximumTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch06/fig06_07/RandomIntegers.html"><font color="#FFFFFF" size="2">RandomIntegers</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch06/fig06_08/RollDie.html"><font color="#FFFFFF" size="2">RollDie</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch06/fig06_09/Craps.html"><font color="#FFFFFF" size="2">Craps</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch06/fig06_10/Scoping.html"><font color="#FFFFFF" size="2">Scoping</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch06/fig06_12/MethodOverload.html"><font color="#FFFFFF" size="2">MethodOverload</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch06/fig06_15/FactorialTest.html"><font color="#FFFFFF" size="2">FactorialTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch06/fig06_16/FibonacciTest.html"><font color="#FFFFFF" size="2">FibonacciTest</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter7')" onmouseout="hidemenu('chapter7')" bgcolor="#002060">
+<a href="chapter7.html" onMouseOver="document.images['i16'].src='sitebuilder/images/navbar-6-mouseOver-83734.png'" onMouseOut="document.images['i16'].src='sitebuilder/images/navbar-6-inactive-82921.png'"><img name="i16" src="sitebuilder/images/navbar-6-inactive-82921.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter7" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch07/fig07_02/InitArray.html"><font color="#FFFFFF" size="2">InitArray</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch07/fig07_05/SumArray.html"><font color="#FFFFFF" size="2">SumArray</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch07/fig07_06/Histogram.html"><font color="#FFFFFF" size="2">Histogram</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch07/fig07_07/RollDie.html"><font color="#FFFFFF" size="2">RollDie</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch07/fig07_08/StudentPoll.html"><font color="#FFFFFF" size="2">StudentPoll</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch07/fig07_09/PassArray.html"><font color="#FFFFFF" size="2">PassArray</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch07/fig07_10/BubbleSort.html"><font color="#FFFFFF" size="2">BubbleSort</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch07/fig07_11/LinearSearch.html"><font color="#FFFFFF" size="2">LinearSearch</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch07/fig07_12/BinarySearch.html"><font color="#FFFFFF" size="2">BinarySearch</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch07/fig07_15/DoubleArray.html"><font color="#FFFFFF" size="2">DoubleArray</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter8')" onmouseout="hidemenu('chapter8')" bgcolor="#002060">
+<a href="chapter8.html" onMouseOver="document.images['i17'].src='sitebuilder/images/navbar-7-mouseOver-13718.png'" onMouseOut="document.images['i17'].src='sitebuilder/images/navbar-7-inactive-12890.png'"><img name="i17" src="sitebuilder/images/navbar-7-inactive-12890.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter8" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch08/fig08_01_02/TimeTest1.html"><font color="#FFFFFF" size="2">TimeTest 1</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch08/fig08_03/TimeTest2.html"><font color="#FFFFFF" size="2">TimeTest 2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch08/fig08_05_06/TimeTest3.html"><font color="#FFFFFF" size="2">TimeTest 3</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch08/fig08_07_08/TimeTest4.html"><font color="#FFFFFF" size="2">TimeTest 4</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch08/fig08_01_02/Time1.html"><font color="#FFFFFF" size="2">Time 1</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch08/fig08_05_06/Time2.html"><font color="#FFFFFF" size="2">Time 2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch08/fig08_07_08/Time3.html"><font color="#FFFFFF" size="2">Time 3</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch08/fig08_04/ThisTest.html"><font color="#FFFFFF" size="2">ThisTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch08/fig08_09_11/EmployeeTest.html"><font color="#FFFFFF" size="2">EmployeeTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch08/fig08_12_13/EmployeeTest.html"><font color="#FFFFFF" size="2">EmployeeTest 2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch08/fig08_09_11/Employee.html"><font color="#FFFFFF" size="2">Employee</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch08/fig08_12_13/Employee.html"><font color="#FFFFFF" size="2">Employee 2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch08/fig08_09_11/Date.html"><font color="#FFFFFF" size="2">Date</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch08/fig08_14/IncrementTest.html"><font color="#FFFFFF" size="2">IncrementTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch08/fig08_18/PackageDataTest.html"><font color="#FFFFFF" size="2">PackageDataTest</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter9')" onmouseout="hidemenu('chapter9')" bgcolor="#002060">
+<a href="chapter9.html" onMouseOver="document.images['i18'].src='sitebuilder/images/navbar-8-mouseOver-14937.png'" onMouseOut="document.images['i18'].src='sitebuilder/images/navbar-8-inactive-14125.png'"><img name="i18" src="sitebuilder/images/navbar-8-inactive-14125.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter9" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch09/fig09_04_05/PointTest.html"><font color="#FFFFFF" size="2">PointTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch09/fig09_04_05/Point.html"><font color="#FFFFFF" size="2">Point</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch09/fig09_09_11/Point2.html"><font color="#FFFFFF" size="2">Point 2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch09/fig09_12_14/Point3.html"><font color="#FFFFFF" size="2">Point 3</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch09/fig09_06_07/CircleTest.html"><font color="#FFFFFF" size="2">CircleTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch09/fig09_09_11/CircleTest3.html"><font color="#FFFFFF" size="2">CircleTest 3</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch09/fig09_12_14/CircleTest4.html"><font color="#FFFFFF" size="2">CircleTest 4</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch09/fig09_06_07/Circle.html"><font color="#FFFFFF" size="2">Circle</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch09/fig09_08/Circle2.html"><font color="#FFFFFF" size="2">Circle 2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch09/fig09_09_11/Circle3.html"><font color="#FFFFFF" size="2">Circle 3</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch09/fig09_12_14/Circle4.html"><font color="#FFFFFF" size="2">Circle 4</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch09/fig09_15_16/CylinderTest.html"><font color="#FFFFFF" size="2">CylinderTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch09/fig09_15_16/Cylinder.html"><font color="#FFFFFF" size="2">Cylinder</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch09/fig09_17_19/ConstructorFinalizerTest.html"><font color="#FFFFFF" size="2">ConstructorFinalizerTest</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter10')" onmouseout="hidemenu('chapter10')" bgcolor="#002060">
+<a href="chapter10.html" onMouseOver="document.images['i19'].src='sitebuilder/images/navbar-9-mouseOver-16171.png'" onMouseOut="document.images['i19'].src='sitebuilder/images/navbar-9-inactive-15359.png'"><img name="i19" src="sitebuilder/images/navbar-9-inactive-15359.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter10" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_01/Point3.html"><font color="#FFFFFF" size="2">Point 3</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_01/Circle4.html"><font color="#FFFFFF" size="2">Circle 4</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_01/HierarchyRelationshipTest1.html"><font color="#FFFFFF" size="2">HierarchyRelationshipTest 1</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_02/HierarchyRelationshipTest2.html"><font color="#FFFFFF" size="2">HierarchyRelationshipTest 2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_03/HierarchyRelationshipTest3.html"><font color="#FFFFFF" size="2">HierarchyRelationshipTest 3</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_06_10/Shape.html"><font color="#FFFFFF" size="2">Shape</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_06_10/Point.html"><font color="#FFFFFF" size="2">Point</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_06_10/Cylinder.html"><font color="#FFFFFF" size="2">Cylinder</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_06_10/Circle.html"><font color="#FFFFFF" size="2">Circle</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_06_10/AbstractInheritanceTest.html"><font color="#FFFFFF" size="2">AbstractInheritanceTest.java</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_12_17/SalariedEmployee.html"><font color="#FFFFFF" size="2">SalariedEmployee</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_12_17/PayrollSystemTest.html"><font color="#FFFFFF" size="2">PayrollSystemTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_12_17/HourlyEmployee.html"><font color="#FFFFFF" size="2">HourlyEmployee</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_12_17/Employee.html"><font color="#FFFFFF" size="2">Employee</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_12_17/CommissionEmployee.html"><font color="#FFFFFF" size="2">CommissionEmployee</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_12_17/BasePlusCommissionEmployee.html"><font color="#FFFFFF" size="2">BasePlusCommissionEmployee</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_18_20/Shape.html"><font color="#FFFFFF" size="2">Shape</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_18_20/InterfaceTest.html"><font color="#FFFFFF" size="2">InterfaceTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_18_20/AbstractInheritanceTest.html"><font color="#FFFFFF" size="2">AbstractInheritanceTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_21_22/Time.html"><font color="#FFFFFF" size="2">Time</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_21_22/TimeTestWindow.html"><font color="#FFFFFF" size="2">TimeTestWindow</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/fig10_23/TimeTestWindow2.html"><font color="#FFFFFF" size="2">TimeTestWindow 2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/singleton/SingletonTest.html"><font color="#FFFFFF" size="2">SingletonTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch10/singleton/Singleton.html"><font color="#FFFFFF" size="2">Singleton</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter11')" onmouseout="hidemenu('chapter11')" bgcolor="#002060">
+<a href="chapter11.html" onMouseOver="document.images['i20'].src='sitebuilder/images/navbar-10-mouseOver-17390.png'" onMouseOut="document.images['i20'].src='sitebuilder/images/navbar-10-inactive-16578.png'"><img name="i20" src="sitebuilder/images/navbar-10-inactive-16578.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter11" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_01/StringConstructors.html"><font color="#FFFFFF" size="2">StringConstructors</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_02/StringMiscellaneous.html"><font color="#FFFFFF" size="2">StringMiscellaneous</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_03/StringCompare.html"><font color="#FFFFFF" size="2">StringCompare</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_04/StringStartEnd.html"><font color="#FFFFFF" size="2">StringStartEnd</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_05/StringIndexMethods.html"><font color="#FFFFFF" size="2">StringIndexMethods</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_06/SubString.html"><font color="#FFFFFF" size="2">SubString</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_07/StringConcatenation.html"><font color="#FFFFFF" size="2">StringConcatenation</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_08/StringMiscellaneous2.html"><font color="#FFFFFF" size="2">StringMiscellaneous 2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_09/StringValueOf.html"><font color="#FFFFFF" size="2">StringValueOf</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_10/StringBufferConstructors.html"><font color="#FFFFFF" size="2">StringBufferConstructors</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_11/StringBufferCapLen.html"><font color="#FFFFFF" size="2">StringBufferCapLen</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_12/StringBufferChars.html"><font color="#FFFFFF" size="2">StringBufferChars</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_13/StringBufferAppend.html"><font color="#FFFFFF" size="2">StringBufferAppend</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_14/StringBufferInsert.html"><font color="#FFFFFF" size="2">StringBufferInsert</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_15/StaticCharMethods.html"><font color="#FFFFFF" size="2">StaticCharMethods</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_16/StaticCharMethods2.html"><font color="#FFFFFF" size="2">StaticCharMethods 2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_17/OtherCharMethods.html"><font color="#FFFFFF" size="2">OtherCharMethods</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_18/TokenTest.html"><font color="#FFFFFF" size="2">TokenTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_19/DeckOfCards.html"><font color="#FFFFFF" size="2">DeckOfCards.java</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_21/ValidateFrame.html"><font color="#FFFFFF" size="2">ValidateFrame</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_23/RegexSubstitution.html"><font color="#FFFFFF" size="2">RegexSubstitution</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch11/fig11_24/RegexMatches.html"><font color="#FFFFFF" size="2">RegexMatches</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter12')" onmouseout="hidemenu('chapter12')" bgcolor="#002060">
+<a href="chapter12.html" onMouseOver="document.images['i21'].src='sitebuilder/images/navbar-11-mouseOver-18734.png'" onMouseOut="document.images['i21'].src='sitebuilder/images/navbar-11-inactive-17812.png'"><img name="i21" src="sitebuilder/images/navbar-11-inactive-17812.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter12" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch12/fig12_05/ShowColors.html"><font color="#FFFFFF" size="2">ShowColors</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch12/fig12_06/ShowColors2.html"><font color="#FFFFFF" size="2">ShowColors 2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch12/fig12_09/Fonts.html"><font color="#FFFFFF" size="2">Fonts</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch12/fig12_12/Metrics.html"><font color="#FFFFFF" size="2">Metrics</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch12/fig12_14/LinesRectsOvals.html"><font color="#FFFFFF" size="2">LinesRectsOvals</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch12/fig12_19/DrawArcs.html"><font color="#FFFFFF" size="2">DrawArcs</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch12/fig12_21/DrawPolygons.html"><font color="#FFFFFF" size="2">DrawPolygons</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch12/fig12_22/Shapes.html"><font color="#FFFFFF" size="2">Shapes</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch12/fig12_23/Shapes2.html"><font color="#FFFFFF" size="2">Shapes 2</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter13')" onmouseout="hidemenu('chapter13')" bgcolor="#002060">
+<a href="chapter13.html" onMouseOver="document.images['i22'].src='sitebuilder/images/navbar-12-mouseOver-20031.png'" onMouseOut="document.images['i22'].src='sitebuilder/images/navbar-12-inactive-19171.png'"><img name="i22" src="sitebuilder/images/navbar-12-inactive-19171.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter13" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_04/LabelTest.html"><font color="#FFFFFF" size="2">LabelTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_07/TextFieldTest.html"><font color="#FFFFFF" size="2">TextFieldTest</font></a></td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('ButtonTest')" onmouseout="hidemenu('ButtonTest')" bgcolor="#002060">
+<a target="_blank" href="examples/ch13/fig13_10/ButtonTest.html"><font color="#FFFFFF" size="2">ButtonTest</font></a>
+<table class="menu" id="ButtonTest" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_10/ButtonTest.html"><font color="#FFFFFF" size="2">ButtonTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_10/bug1.html"><font color="#FFFFFF" size="2">bug1.GIF</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_10/bug2.html"><font color="#FFFFFF" size="2">bug2.GIF</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_11/CheckBoxTest.html"><font color="#FFFFFF" size="2">CheckBoxTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_12/RadioButtonTest.html"><font color="#FFFFFF" size="2">RadioButtonTest</font></a></td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('ComboBoxTest')" onmouseout="hidemenu('ComboBoxTest')" bgcolor="#002060">
+<a target="_blank" href="examples/ch13/fig13_13/ComboBoxTest.html"><font color="#FFFFFF" size="2">ComboBoxTest</font></a>
+<table class="menu" id="ComboBoxTest" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_13/ComboBoxTest.html"><font color="#FFFFFF" size="2">ComboBoxTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_13/travelbug.html"><font color="#FFFFFF" size="2">travelbug.gif</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_13/buganim.html"><font color="#FFFFFF" size="2">buganim.gif</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_13/bug1.html"><font color="#FFFFFF" size="2">bug1.GIF</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_13/bug2.html"><font color="#FFFFFF" size="2">bug2.GIF</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_14/ListTest.html"><font color="#FFFFFF" size="2">ListTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_15/MultipleSelectionTest.html"><font color="#FFFFFF" size="2">MultipleSelectionTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_17/MouseTracker.html"><font color="#FFFFFF" size="2">MouseTracker</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_19/Painter.html"><font color="#FFFFFF" size="2">Painter</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_20/MouseDetails.html"><font color="#FFFFFF" size="2">MouseDetails</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_22/KeyDemo.html"><font color="#FFFFFF" size="2">KeyDemo</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_24/FlowLayoutDemo.html"><font color="#FFFFFF" size="2">FlowLayoutDemo</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_25/BorderLayoutDemo.html"><font color="#FFFFFF" size="2">BorderLayoutDemo</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_26/GridLayoutDemo.html"><font color="#FFFFFF" size="2">GridLayoutDemo</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch13/fig13_27/PanelDemo.java"><font color="#FFFFFF" size="2">PanelDemo</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter14')" onmouseout="hidemenu('chapter14')" bgcolor="#002060">
+<a href="chapter14.html" onMouseOver="document.images['i23'].src='sitebuilder/images/navbar-13-mouseOver-76125.png'" onMouseOut="document.images['i23'].src='sitebuilder/images/navbar-13-inactive-75265.png'"><img name="i23" src="sitebuilder/images/navbar-13-inactive-75265.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter14" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_01/TextAreaDemo.java"><font color="#FFFFFF" size="2">TextAreaDemo</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_02_03/CustomPanel.java"><font color="#FFFFFF" size="2">CustomPanel</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_02_03/CustomPanelTest.java"><font color="#FFFFFF" size="2">CustomPanelTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_04_05/SelfContainedPanelTest.java"><font color="#FFFFFF" size="2">SelfContainedPanelTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_04_05/SelfContainedPanel.java"><font color="#FFFFFF" size="2">SelfContainedPanel</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_07_08/OvalPanel.java"><font color="#FFFFFF" size="2">OvalPanel</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_07_08/SliderDemo.java"><font color="#FFFFFF" size="2">SliderDemo</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_09/MenuTest.java"><font color="#FFFFFF" size="2">MenuTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_10/PopupTest.html"><font color="#FFFFFF" size="2">PopupTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_11/LookAndFeelDemo.html"><font color="#FFFFFF" size="2">LookAndFeelDemo</font></a></td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('DesktopTest')" onmouseout="hidemenu('DesktopTest')" bgcolor="#002060">
+<a target="_blank" href="examples/ch14/fig14_12/DesktopTest.java"><font color="#FFFFFF" size="2">DesktopTest</font></a>
+<table class="menu" id="DesktopTest" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_12/DesktopTest.java"><font color="#FFFFFF" size="2">DesktopTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_12/yellowflowers.png"><font color="#FFFFFF" size="2">yellowflowers.png</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_12/redflowers.png"><font color="#FFFFFF" size="2">redflowers.png</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_12/redflowers2.png"><font color="#FFFFFF" size="2">redflowers2.png</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_12/purpleflowers.png"><font color="#FFFFFF" size="2">purpleflowers.png</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_12/lavenderflowers.png"><font color="#FFFFFF" size="2">lavenderflowers.png</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_13/JTabbedPaneDemo.java"><font color="#FFFFFF" size="2">JTabbedPaneDemo</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_15/BoxLayoutDemo.java"><font color="#FFFFFF" size="2">BoxLayoutDemo</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_19/GridBagDemo.java"><font color="#FFFFFF" size="2">GridBagDemo</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch14/fig14_20/GridBagDemo2.java"><font color="#FFFFFF" size="2">GridBagDemo2</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter15')" onmouseout="hidemenu('chapter15')" bgcolor="#002060">
+<a href="chapter15.html" onMouseOver="document.images['i24'].src='sitebuilder/images/navbar-14-mouseOver-77406.png'" onMouseOut="document.images['i24'].src='sitebuilder/images/navbar-14-inactive-76562.png'"><img name="i24" src="sitebuilder/images/navbar-14-inactive-76562.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter15" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch15/fig15_01/DivideByZeroTest.java"><font color="#FFFFFF" size="2">DivideByZeroTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch15/fig15_03/UsingExceptions.java"><font color="#FFFFFF" size="2">UsingExceptions1</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch15/fig15_04/UsingExceptions.java"><font color="#FFFFFF" size="2">UsingExceptions2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch15/fig15_05/UsingExceptions.java"><font color="#FFFFFF" size="2">UsingExceptions3</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch15/fig15_06/UsingChainedExceptions.java"><font color="#FFFFFF" size="2">UsingChainedExceptions</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter16')" onmouseout="hidemenu('chapter16')" bgcolor="#002060">
+<a href="chapter16.html" onMouseOver="document.images['i25'].src='sitebuilder/images/navbar-15-mouseOver-78687.png'" onMouseOut="document.images['i25'].src='sitebuilder/images/navbar-15-inactive-77843.png'"><img name="i25" src="sitebuilder/images/navbar-15-inactive-77843.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter16" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_03/ThreadTester.java"><font color="#FFFFFF" size="2">ThreadTester</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_04_08/Buffer.java"><font color="#FFFFFF" size="2">Buffer</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_04_08/Consumer.java"><font color="#FFFFFF" size="2">Consumer</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_04_08/Producer.java"><font color="#FFFFFF" size="2">Producer</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_04_08/SharedBufferTest.java"><font color="#FFFFFF" size="2">SharedBufferTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_04_08/UnsynchronizedBuffer.java"><font color="#FFFFFF" size="2">UnsynchronizedBuffer</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_09_10/Buffer.java"><font color="#FFFFFF" size="2">Buffer</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_09_10/Consumer.java"><font color="#FFFFFF" size="2">Consumer</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_09_10/Producer.java"><font color="#FFFFFF" size="2">Producer</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_09_10/SharedBufferTest2.java"><font color="#FFFFFF" size="2">SharedBufferTest2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_09_10/SynchronizedBuffer.java"><font color="#FFFFFF" size="2">SynchronizedBuffer</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_11_15/Buffer.java"><font color="#FFFFFF" size="2">Buffer</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_11_15/CircularBuffer.java"><font color="#FFFFFF" size="2">CircularBuffer</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_11_15/CircularBufferTest.java"><font color="#FFFFFF" size="2">CircularBufferTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_11_15/Consumer.java"><font color="#FFFFFF" size="2">Consumer</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_11_15/Producer.java"><font color="#FFFFFF" size="2">Producer</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_11_15/RunnableOutput.java"><font color="#FFFFFF" size="2">RunnableOutput</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch16/fig16_16/RandomCharacters.java"><font color="#FFFFFF" size="2">RandomCharacters</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter17')" onmouseout="hidemenu('chapter17')" bgcolor="#002060">
+<a href="chapter17.html" onMouseOver="document.images['i26'].src='sitebuilder/images/navbar-16-mouseOver-79968.png'" onMouseOut="document.images['i26'].src='sitebuilder/images/navbar-16-inactive-79125.png'"><img name="i26" src="sitebuilder/images/navbar-16-inactive-79125.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter17" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch17/fig17_04/FileTest.java"><font color="#FFFFFF" size="2">FileTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch17/fig17_05_07/AccountRecord.java"><font color="#FFFFFF" size="2">AccountRecord</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch17/fig17_05_07/BankUI.java"><font color="#FFFFFF" size="2">BankUI</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch17/fig17_05_07/CreateSequentialFile.java"><font color="#FFFFFF" size="2">CreateSequentialFile</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch17/fig17_09/ReadSequentialFile.java"><font color="#FFFFFF" size="2">ReadSequentialFile</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch17/fig17_10/CreditInquiry.java"><font color="#FFFFFF" size="2">CreditInquiry</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch17/fig17_12/RandomAccessAccountRecord.java"><font color="#FFFFFF" size="2">RandomAccessAccountRecord</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch17/fig17_13/CreateRandomFile.java"><font color="#FFFFFF" size="2">CreateRandomFile</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch17/fig17_14/WriteRandomFile.java"><font color="#FFFFFF" size="2">WriteRandomFile</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch17/fig17_15/ReadRandomFile.java"><font color="#FFFFFF" size="2">ReadRandomFile</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch17/fig17_21_22/FileEditor.java"><font color="#FFFFFF" size="2">FileEditor</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch17/fig17_21_22/TransactionProcessor.java"><font color="#FFFFFF" size="2">TransactionProcessor</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch17/fig17_23/FileChannelTest.java"><font color="#FFFFFF" size="2">FileChannelTest</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter18')" onmouseout="hidemenu('chapter18')" bgcolor="#002060">
+<a href="chapter18.html" onMouseOver="document.images['i27'].src='sitebuilder/images/navbar-17-mouseOver-81250.png'" onMouseOut="document.images['i27'].src='sitebuilder/images/navbar-17-inactive-80406.png'"><img name="i27" src="sitebuilder/images/navbar-17-inactive-80406.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter18" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch18/fig18_01_02/SiteSelector.java"><font color="#FFFFFF" size="2">SiteSelector</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch18/fig18_03/ReadServerFile.java"><font color="#FFFFFF" size="2">ReadServerFile</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch18/fig18_04_05/Client.java"><font color="#FFFFFF" size="2">Client</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch18/fig18_04_05/Server.java"><font color="#FFFFFF" size="2">Server</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch18/fig18_06_07/Client.java"><font color="#FFFFFF" size="2">Client</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch18/fig18_06_07/Server.java"><font color="#FFFFFF" size="2">Server</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch18/fig18_08_09/TicTacToeClient.java"><font color="#FFFFFF" size="2">TicTacToeClient</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch18/fig18_08_09/TicTacToeServer.java"><font color="#FFFFFF" size="2">TicTacToeServer</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter19')" onmouseout="hidemenu('chapter19')" bgcolor="#002060">
+<a href="chapter19.html" onMouseOver="document.images['i28'].src='sitebuilder/images/navbar-18-mouseOver-82531.png'" onMouseOut="document.images['i28'].src='sitebuilder/images/navbar-18-inactive-81671.png'"><img name="i28" src="sitebuilder/images/navbar-18-inactive-81671.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter19" width="130">
+<tr class="menu">
+<td onmouseover="showmenu('LoadImageAndScale')" onmouseout="hidemenu('LoadImageAndScale')" bgcolor="#002060">
+<a target="_blank" href="examples/ch19/fig19_01/LoadImageAndScale.java"><font color="#FFFFFF" size="2">LoadImageAndScale</font></a>
+<table class="menu" id="LoadImageAndScale" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch19/fig19_01/LoadImageAndScale.java"><font color="#FFFFFF" size="2">LoadImageAndScale</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch19/fig19_01/Logo.gif"><font color="#FFFFFF" size="2"></font>Logo.gif</a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('LogoAnimator')" onmouseout="hidemenu('LogoAnimator')" bgcolor="#002060">
+<a target="_blank" href="examples/ch19/fig19_02/LogoAnimator.java"><font color="#FFFFFF" size="2">LogoAnimator</font></a>
+<table class="menu" id="LogoAnimator" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch19/fig19_02/LogoAnimator.java"><font color="#FFFFFF" size="2">LogoAnimator</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch19/fig19_02/images.zip"><font color="#FFFFFF" size="2">images.zip</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('ImageMap')" onmouseout="hidemenu('ImageMap')" bgcolor="#002060">
+<a target="_blank" href="examples/ch19/fig19_03/ImageMap.java"><font color="#FFFFFF" size="2">ImageMap</font></a>
+<table class="menu" id="ImageMap" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch19/fig19_03/ImageMap.java"><font color="#FFFFFF" size="2">ImageMap</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch19/fig19_03/icons.png"><font color="#FFFFFF" size="2">icons.png</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch19/fig19_03/icons.tiff"><font color="#FFFFFF" size="2">icons.tif</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('LoadAudioAndPlay')" onmouseout="hidemenu('LoadAudioAndPlay')" bgcolor="#002060">
+<a target="_blank" href="examples/ch19/fig19_04/LoadAudioAndPlay.java"><font color="#FFFFFF" size="2">LoadAudioAndPlay</font></a>
+<table class="menu" id="LoadAudioAndPlay" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch19/fig19_04/LoadAudioAndPlay.java"><font color="#FFFFFF" size="2">LoadAudioAndPlay</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch19/fig19_04/welcome.wav"><font color="#FFFFFF" size="2">welcome.wav</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch19/fig19_04/sound1.wav"><font color="#FFFFFF" size="2">sound1.wav</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch19/fig19_04/sound2.wav"><font color="#FFFFFF" size="2">sound2.wav</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch19/fig19_04/hi.au"><font color="#FFFFFF" size="2">hi.au</font></a></td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter20')" onmouseout="hidemenu('chapter20')" bgcolor="#002060">
+<a href="chapter20.html" onMouseOver="document.images['i29'].src='sitebuilder/images/navbar-19-mouseOver-83843.png'" onMouseOut="document.images['i29'].src='sitebuilder/images/navbar-19-inactive-82968.png'"><img name="i29" src="sitebuilder/images/navbar-19-inactive-82968.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter20" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch20/fig20_03/EmptyListException.java"><font color="#FFFFFF" size="2">EmptyListException</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch20/fig20_03/List.java"><font color="#FFFFFF" size="2">List</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch20/fig20_03/ListTest.java"><font color="#FFFFFF" size="2">ListTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch20/fig20_10/StackInheritance.java"><font color="#FFFFFF" size="2">StackInheritance</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch20/fig20_10/StackInheritanceTest.java"><font color="#FFFFFF" size="2">StackInheritanceTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch20/fig20_12/StackComposition.java"><font color="#FFFFFF" size="2">StackComposition</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch20/fig20_12/StackCompositionTest.java"><font color="#FFFFFF" size="2">StackCompositionTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch20/fig20_13/Queue.java"><font color="#FFFFFF" size="2">Queue</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch20/fig20_13/QueueTest.java"><font color="#FFFFFF" size="2">QueueTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch20/fig20_17/Tree.java"><font color="#FFFFFF" size="2">Tree</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch20/fig20_17/TreeTest.java"><font color="#FFFFFF" size="2">TreeTest</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter21')" onmouseout="hidemenu('chapter21')" bgcolor="#002060">
+<a href="chapter21.html" onMouseOver="document.images['i30'].src='sitebuilder/images/navbar-20-mouseOver-85125.png'" onMouseOut="document.images['i30'].src='sitebuilder/images/navbar-20-inactive-84281.png'"><img name="i30" src="sitebuilder/images/navbar-20-inactive-84281.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter21" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch21/fig21_01/VectorTest.java"><font color="#FFFFFF" size="2">VectorTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch21/fig21_02/StackTest.java"><font color="#FFFFFF" size="2">StackTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch21/fig21_03/WordTypeCount.java"><font color="#FFFFFF" size="2">WordTypeCount</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch21/fig21_04/PropertiesTest.java"><font color="#FFFFFF" size="2">PropertiesTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch21/fig21_06/PrintBits.java"><font color="#FFFFFF" size="2">PrintBits</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch21/fig21_08/MiscBitOps.java"><font color="#FFFFFF" size="2">MiscBitOps</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch21/fig21_11/BitShift.java"><font color="#FFFFFF" size="2">BitShift</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch21/fig21_13/BitSetTest.java"><font color="#FFFFFF" size="2">BitSetTest</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter22')" onmouseout="hidemenu('chapter22')" bgcolor="#002060">
+<a href="chapter22.html" onMouseOver="document.images['i31'].src='sitebuilder/images/navbar-21-mouseOver-86406.png'" onMouseOut="document.images['i31'].src='sitebuilder/images/navbar-21-inactive-85562.png'"><img name="i31" src="sitebuilder/images/navbar-21-inactive-85562.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter22" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch22/fig22_01/UsingArrays.java"><font color="#FFFFFF" size="2">UsingArrays</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch22/fig22_02/UsingAsList.java"><font color="#FFFFFF" size="2">UsingAsList</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch22/fig22_03/CollectionTest.java"><font color="#FFFFFF" size="2">CollectionTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch22/fig22_04/ListTest.java"><font color="#FFFFFF" size="2">ListTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch22/fig22_05/UsingToArray.java"><font color="#FFFFFF" size="2">UsingToArray</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch22/fig22_06/Sort1.java"><font color="#FFFFFF" size="2">Sort 1</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch22/fig22_07/Sort2.java"><font color="#FFFFFF" size="2">Sort 2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch22/fig22_08/Sort3.java"><font color="#FFFFFF" size="2">Sort 3</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch22/fig22_08/Time2.java"><font color="#FFFFFF" size="2">Time 2</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch22/fig22_09/Cards.java"><font color="#FFFFFF" size="2">Cards</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch22/fig22_10/Algorithms1.java"><font color="#FFFFFF" size="2">Algorithms 1</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch22/fig22_11/BinarySearchTest.java"><font color="#FFFFFF" size="2">BinarySearchTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch22/fig22_12/SetTest.java"><font color="#FFFFFF" size="2">SetTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch22/fig22_13/SortedSetTest.java"><font color="#FFFFFF" size="2">SortedSetTest</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch22/fig22_14/WordTypeCount.java"><font color="#FFFFFF" size="2">WordTypeCount</font></a></td></tr>
+</table>
+</td></tr>
+<tr class="menu">
+<td onmouseover="showmenu('chapter23')" onmouseout="hidemenu('chapter23')" bgcolor="#002060">
+<a href="chapter23.html" onMouseOver="document.images['i32'].src='sitebuilder/images/navbar-22-mouseOver-87671.png'" onMouseOut="document.images['i32'].src='sitebuilder/images/navbar-22-inactive-86812.png'"><img name="i32" src="sitebuilder/images/navbar-22-inactive-86812.png" border="0" width="150" height="24" alt=""/></a>
+<table class="menu" id="chapter23" width="130">
+<tr class="menu"><td><a target="_blank" href="examples/ch23/ResultSetTableModel.java"><font color="#FFFFFF" size="2">ResultSetTableModel</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch23/employee.sql"><font color="#FFFFFF" size="2">employee.sql</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch23/DisplayQueryResults.java"><font color="#FFFFFF" size="2">DisplayQueryResults</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch23/DisplayAuthors.java"><font color="#FFFFFF" size="2">DisplayAuthors</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch23/createDatabase.bat"><font color="#FFFFFF" size="2">createDatabase.bat</font></a></td></tr>
+<tr class="menu"><td><a target="_blank" href="examples/ch23/books.sql"><font color="#FFFFFF" size="2">books.sql</font></a></td></tr>
+</table>
+</td></tr></table>
+      </div>
+    </div>
+<!--$begin exclude$><div style="position:absolute;left:50;top:50;background:white"><font color=black>This file is not intended to be viewed directly using a web browser.  To create a viewable file, use the <b>Preview in Browser</b> or <b>Publish to Yahoo! Web Hosting</b> commands from within Yahoo! SiteBuilder.</font></div><$end exclude$-->
+  </body>
+
+<!-- Mirrored from twieth.com/compsci/webfinal/chapter18.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Jan 2017 08:01:55 GMT -->
+</html>
